@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_dictionaries">Словари</string>
+
+    <string name="tab_text_favourite">Избранное</string>
+    <string name="tab_text_vocabulary">Основной</string>
+    <string name="tab_text_irregular_verbs">Неправильные глаголы</string>
+
+    <string name="easy">Легко</string>
+    <string name="medium">Средне</string>
+    <string name="hard">Сложно</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="search">Поиск</string>
+    <string name="confirm_delete">Удалить слово %1$s ?</string>
+    <string name="button_ok">ок</string>
+    <string name="button_cancel">отмена</string>
+    <string name="word_deleted">Слово %1$s удалено</string>
+    <string name="string_change_difficulty">Изменить сложность на %1$s ?</string>
+    <string name="string_edit">Изменить</string>
+    <string name="string_word">слово</string>
+    <string name="string_transcription">транскрипция</string>
+
+    <string name="string_not_supported_language">Я умею говорить только на английском</string>
+    <string name="string_add">Добавить</string>
+    <string name="string_translation">перевод</string>
+    <string name="string_save">сохранить</string>
+    <string name="string_add_translation">Введите перевод</string>
+    <string name="string_difficulty">Сложность</string>
+    <string name="string_translations">Переводы</string>
+    <string name="string_categories">Категория</string>
+    <string name="string_loading">Загрузка...</string>
+    <string name="string_error_empty_field">Ошибка: Поле не должно быть пустым</string>
+    <string name="string_error_emty_translation_list">Ошибка: Список должен содержать хотя бы один перевод</string>
+    <string name="string_guessed">Угадано:</string>
+    <string name="string_not_guessed">Не угадано:</string>
+    <string name="string_no_translation">перевод отсутствует</string>
+    <string name="string_easy_not_caps">легко</string>
+    <string name="string_medium_not_caps">средне</string>
+    <string name="string_hard_not_caps">сложно</string>
+    <string name="string_back">Назад</string>
+    <string name="string_settings">Настройки</string>
+    <string name="string_sort">Сортировка</string>
+    <string name="string_words">Слова</string>
+    <string name="string_irregular_verbs">Неправильные глаголы</string>
+    <string name="string_select_vocabulary">Выбор словаря</string>
+    <string name="string_select_category">Выбор категории</string>
+    <string name="string_select_difficulty">Выбор сложности</string>
+    <string name="string_any">Любая</string>
+    <string name="string_words_count">%1$s слов</string>
+    <string name="string_not_enough_words_description">Необходимо минимум 5 слов в категории для тренировки</string>
+    <string name="string_show_cards">Показать карточки?</string>
+    <string name="string_not_enough_words">Недостаточно слов</string>
+    <string name="string_back_to_choice">Назад к выбору</string>
+    <string name="string_yes">Да</string>
+    <string name="string_no">Нет</string>
+    <string name="string_train">К тренировке</string>
+    <string name="string_next_words_set">Следующий набор слов</string>
+    <string name="string_add_to_favorites">Добавить в избранное?</string>
+    <string name="string_remove_from_favorites">Убрать из избранного?</string>
+    <string name="string_back_home">Вернуться в главное меню?</string>
+    <string name="string_your_answer">твой ответ</string>
+    <string name="string_test_answer">Проверить</string>
+    <string name="string_statistic">Статистика</string>
+    <string name="string_home">В главное меню</string>
+    <string name="string_continue">Продолжить</string>
+    <string name="string_clear">Очистить</string>
+    <string name="string_clear_favorites">Очистить избранное?</string>
+    <string name="string_words_in_category">Слов в категории</string>
+    <string name="string_lost_progress">Текущий прогресс будет потерян.</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".TrainingWordsActivity">
+
+    <com.evgeniy.moiseev.learnwords.view.CustomViewWordLabel
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text=""
+        app:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/string_categories"
+        android:textColor="@color/colorIcons"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/difficultyLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/difficultyLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/string_difficulty"
+        android:textColor="@color/colorIcons"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/categoryLabel"
+        app:layout_constraintRight_toLeftOf="@id/textViewCategory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/categoryIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/categoryLabel"
+        app:layout_constraintRight_toRightOf="@id/categoryLabel"
+        app:layout_constraintTop_toBottomOf="@id/categoryLabel" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/difficultyLabel"
+        app:layout_constraintRight_toRightOf="@id/difficultyLabel"
+        app:layout_constraintTop_toTopOf="@id/categoryIcon" />
+
+    <TextView
+        android:id="@+id/categoryItemsCountLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/string_words_in_category"
+        android:textColor="@color/colorIcons"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/textViewCategory"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categoryItemsCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorIcons"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/categoryItemsCountLabel"
+        app:layout_constraintRight_toRightOf="@id/categoryItemsCountLabel"
+        app:layout_constraintTop_toTopOf="@id/difficulty" />
+
+    <com.evgeniy.moiseev.learnwords.view.CustomViewPageIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCategory" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pageIndicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

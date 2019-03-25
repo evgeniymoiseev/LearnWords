@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_dictionaries">Словники</string>
+
+    <string name="tab_text_favourite">Вибрані</string>
+    <string name="tab_text_vocabulary">Основний</string>
+    <string name="tab_text_irregular_verbs">Неправильні дієслова</string>
+
+    <string name="easy">Легко</string>
+    <string name="medium">Середньо</string>
+    <string name="hard">Складно</string>
+
+    <string name="action_settings">Налаштування</string>
+    <string name="search">Пошук</string>
+    <string name="confirm_delete">Видалити слово %1$s ?</string>
+    <string name="button_ok">так</string>
+    <string name="button_cancel">ні</string>
+    <string name="word_deleted">Слово %1$s видалено</string>
+    <string name="string_change_difficulty">Змінити складність на %1$s ?</string>
+    <string name="string_edit">Змінити</string>
+    <string name="string_word">слово</string>
+    <string name="string_transcription">транскрипція</string>
+
+    <string name="string_not_supported_language">Я вмію розмовляти тільки англійською</string>
+    <string name="string_add">Додати</string>
+    <string name="string_translation">переклад</string>
+    <string name="string_save">зберегти</string>
+    <string name="string_add_translation">Введіть переклад</string>
+    <string name="string_difficulty">Складність</string>
+    <string name="string_translations">Переклади</string>
+    <string name="string_categories">Категорія</string>
+    <string name="string_loading">Завантаження...</string>
+    <string name="string_error_empty_field">Помилка: Поле не повинно бути пустим</string>
+    <string name="string_error_emty_translation_list">Помилка: Перелік має містити принаймні один переклад</string>
+    <string name="string_guessed">Вгадано:</string>
+    <string name="string_not_guessed">Не вгадано:</string>
+    <string name="string_no_translation">відсутній переклад</string>
+    <string name="string_easy_not_caps">легко</string>
+    <string name="string_medium_not_caps">середньо</string>
+    <string name="string_hard_not_caps">складно</string>
+    <string name="string_back">Назад</string>
+    <string name="string_settings">Налаштування</string>
+    <string name="string_sort">Сортування</string>
+    <string name="string_words">Слова</string>
+    <string name="string_irregular_verbs">Неправильні дієслова</string>
+    <string name="string_select_vocabulary">Вибір словника</string>
+    <string name="string_select_category">Вибір категорії</string>
+    <string name="string_select_difficulty">Вибір складності</string>
+    <string name="string_any">Будь-яка</string>
+    <string name="string_words_count">%1$s слів</string>
+    <string name="string_not_enough_words_description">Необхідно мінімум 5 слів у категорії для тринування</string>
+    <string name="string_show_cards">Показати картки?</string>
+    <string name="string_not_enough_words">Недостатньо слів</string>
+    <string name="string_back_to_choice">Назад до вибору</string>
+    <string name="string_yes">Так</string>
+    <string name="string_no">Ні</string>
+    <string name="string_train">До тринування</string>
+    <string name="string_next_words_set">Наступний набір слів</string>
+    <string name="string_add_to_favorites">Додати у вибране?</string>
+    <string name="string_remove_from_favorites">Видалити з вибраного?</string>
+    <string name="string_back_home">Повернутися у головне меню?</string>
+    <string name="string_your_answer">твоя відповідь</string>
+    <string name="string_test_answer">Перевірити</string>
+    <string name="string_statistic">Статистика</string>
+    <string name="string_home">До головного меню</string>
+    <string name="string_continue">Продовжити</string>
+    <string name="string_clear">Очистити</string>
+    <string name="string_clear_favorites">Очистити вибране?</string>
+    <string name="string_words_in_category">Слів у категорії</string>
+    <string name="string_lost_progress">Поточний прогрес буде втрачено.</string>
+</resources>

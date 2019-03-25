@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="customChipStyle">@style/CustomChipChoice</item>
+        <item name="customOutlinedButtonStyle">@style/CustomOutlinedButton</item>
+    </style>
+
+    <style name="DictionaryActivityTheme" parent="AppTheme"></style>
+
+    <!--&lt;!&ndash;style for tabs all caps text&ndash;&gt;-->
+    <!--<style name="NavigationTabTextAppearance" parent="TextAppearance.Design.Tab">-->
+    <!--<item name="textAllCaps">true</item>-->
+    <!--</style>-->
+
+    <!--theme for splash screen-->
+    <style name="SplashScreenTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_color_chip_state_list</item>
+        <item name="android:textColor">@color/text_color_chip_state_list</item>
+        <item name="rippleColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomTabs" parent="@style/Widget.MaterialComponents.TabLayout">
+        <item name="tabTextAppearance">@android:style/TextAppearance.Material.Small</item>
+    </style>
+
+    <style name="CustomOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="strokeColor">@color/colorPrimary</item>
+    </style>
+
+</resources>

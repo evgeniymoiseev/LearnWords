@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <dimen name="recycler_view_item_height_close">48dp</dimen>
+    <dimen name="recycler_view_item_height_open">80dp</dimen>
+
+    <dimen name="custom_view_word_label_height">16dp</dimen>
+    <dimen name="linear_top_right_offset">48dp</dimen>
+    <dimen name="edit_delete_icons_right_offset">500dp</dimen>
+
+    //for button Speech (when CardView collapsed)
+    <dimen name="default_padding_for_click">12dp</dimen>
+    <dimen name="default_image_views_size">48dp</dimen>
+    //for buttons Edit, Delete, Speech (when CardView expanded)
+    <dimen name="small_padding_for_click">6dp</dimen>
+    <dimen name="small_image_views_size">32dp</dimen>
+
+    <dimen name="text_view_guesses_height">12dp</dimen>
+
+
+</resources>

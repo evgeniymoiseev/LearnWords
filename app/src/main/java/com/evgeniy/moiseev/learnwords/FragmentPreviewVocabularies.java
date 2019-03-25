@@ -1,0 +1,53 @@
+package com.evgeniy.moiseev.learnwords;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
+
+public class FragmentPreviewVocabularies extends Fragment {
+    private static final String ARG_POSITION = "position";
+    private int mPosition;
+
+    public FragmentPreviewVocabularies() {
+    }
+
+    public static FragmentPreviewVocabularies newInstance(int position) {
+        FragmentPreviewVocabularies fragment = new FragmentPreviewVocabularies();
+        Bundle args = new Bundle();
+        args.putInt(ARG_POSITION, position);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mPosition = getArguments().getInt(ARG_POSITION);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_preview_vocabularies, container, false);
+        ImageView imageView = rootView.findViewById(R.id.imagePreviewDictionaries);
+        switch (mPosition) {
+            case 1:
+                imageView.setImageResource(R.drawable.screen_1_rus);
+                break;
+            case 2:
+                imageView.setImageResource(R.drawable.screen_2_rus);
+                break;
+            case 3:
+                imageView.setImageResource(R.drawable.screen_3_rus);
+                break;
+        }
+        return rootView;
+    }
+
+}

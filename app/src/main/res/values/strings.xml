@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name" translatable="false">Learn Words</string>
+    <string name="string_dictionaries">Dictionaries</string>
+
+    <string name="tab_text_favourite">Favourite</string>
+    <string name="tab_text_vocabulary">Main</string>
+    <string name="tab_text_irregular_verbs">Irregular verbs</string>
+
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="confirm_delete">Delete word %1$s ?</string>
+    <string name="button_ok">ok</string>
+    <string name="button_cancel">cancel</string>
+    <string name="word_deleted">Word %1$s deleted</string>
+    <string name="string_change_difficulty">Change difficulty to %1$s ?</string>
+    <string name="string_edit">Edit</string>
+    <string name="string_word">word</string>
+    <string name="string_transcription">transcription</string>
+
+    <string name="string_not_supported_language">Language not supported</string>
+    <string name="string_add">add</string>
+    <string name="string_translation">translation</string>
+    <string name="string_save">save</string>
+    <string name="string_add_translation">Enter translation</string>
+    <string name="string_difficulty">Difficulty</string>
+    <string name="string_translations">Translations</string>
+    <string name="string_categories">Category</string>
+    <string name="string_loading">Loading...</string>
+    <string name="string_error_empty_field">Error: Field must contain characters</string>
+    <string name="string_error_emty_translation_list">Error: List must contain at least one translation</string>
+    <string name="string_guessed">Guessed:</string>
+    <string name="string_not_guessed">Not gussed:</string>
+    <string name="string_no_translation">no translation</string>
+    <string name="string_easy_not_caps">easy</string>
+    <string name="string_medium_not_caps">medium</string>
+    <string name="string_hard_not_caps">hard</string>
+    <string name="string_back">Back</string>
+    <string name="string_settings">Settings</string>
+    <string name="string_sort">Sort</string>
+    <string name="string_words">Words</string>
+    <string name="string_irregular_verbs">Irregular verbs</string>
+    <string name="string_select_vocabulary">Select vocabulary</string>
+    <string name="string_select_category">Select category</string>
+    <string name="string_select_difficulty">Select difficulty</string>
+    <string name="string_any">Any</string>
+    <string name="string_words_count">%1$s words</string>
+    <string name="string_not_enough_words_description">It is necessary 5 words at least in category</string>
+    <string name="string_show_cards">Show cards?</string>
+    <string name="string_not_enough_words">Not enough words</string>
+    <string name="string_back_to_choice">Back to choice</string>
+    <string name="string_yes">Yes</string>
+    <string name="string_no">No</string>
+    <string name="string_train">Train</string>
+    <string name="string_next_words_set">Next words set</string>
+    <string name="string_add_to_favorites">Add to favorites?</string>
+    <string name="string_remove_from_favorites">Remove from favorites?</string>
+    <string name="string_back_home">Exit to the main menu?</string>
+    <string name="string_your_answer">your answer</string>
+    <string name="string_your_answer_en" translatable="false">your answer</string>
+    <string name="string_test_answer">Validate</string>
+    <string name="string_statistic">Statistic</string>
+    <string name="string_home">Home</string>
+    <string name="string_continue">Continue</string>
+    <string name="string_clear">Clear</string>
+    <string name="string_clear_favorites">Clear favorites?</string>
+    <string name="string_words_in_category">Words in category</string>
+    <string name="string_lost_progress">Current progress will be lost.</string>
+
+</resources>
