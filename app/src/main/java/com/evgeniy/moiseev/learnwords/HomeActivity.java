@@ -1,9 +1,9 @@
 package com.evgeniy.moiseev.learnwords;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -23,7 +23,9 @@ import androidx.fragment.app.FragmentManager;
 
 public class HomeActivity extends AppCompatActivity {
     private CardView cardViewVocabulary;
-    private CardView cardViewTraining;
+    private CardView cardViewTrainingVerbs;
+    private CardView cardViewTrainingWords;
+    private CardView cardViewHangman;
 
     private FragmentManager fragmentManager;
     private Handler mHandler;
@@ -37,24 +39,25 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
-    private View.OnClickListener cardViewTrainingListener = new View.OnClickListener() {
+    private View.OnClickListener cardViewTrainingWordsListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            View view = LayoutInflater.from(HomeActivity.this).inflate(R.layout.dialog_what_train_view, null);
-            final AlertDialog dialog = new AlertDialog.Builder(HomeActivity.this)
-                    .setCancelable(false)
-                    .setView(view)
-                    .create();
-            view.findViewById(R.id.buttonWords).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(HomeActivity.this, TrainingModeActivity.class);
-                    startActivity(intent);
-                    dialog.dismiss();
-                }
-            });
-            dialog.show();
-
+            Intent intent = new Intent(HomeActivity.this, TrainingModeActivity.class);
+            startActivity(intent);
+        }
+    };
+    private View.OnClickListener cardViewTrainingVerbsListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(HomeActivity.this, IrregularVerbsModeActivity.class);
+            startActivity(intent);
+        }
+    };
+    private View.OnClickListener cardViewHangmanListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(HomeActivity.this, HangmanActivity.class);
+            startActivity(intent);
         }
     };
 
@@ -65,10 +68,14 @@ public class HomeActivity extends AppCompatActivity {
         populateDatabases();
         mPosition = new Random(System.currentTimeMillis()).nextInt(3) + 1;
         cardViewVocabulary = findViewById(R.id.cardViewVocabulary);
-        cardViewTraining = findViewById(R.id.cardViewTraining);
+        cardViewTrainingVerbs = findViewById(R.id.cardViewTrainingVerbs);
+        cardViewTrainingWords = findViewById(R.id.cardViewTrainingWords);
+        cardViewHangman = findViewById(R.id.cardViewHangman);
 
         cardViewVocabulary.setOnClickListener(cardViewVocabularyListener);
-        cardViewTraining.setOnClickListener(cardViewTrainingListener);
+        cardViewTrainingVerbs.setOnClickListener(cardViewTrainingVerbsListener);
+        cardViewTrainingWords.setOnClickListener(cardViewTrainingWordsListener);
+        cardViewHangman.setOnClickListener(cardViewHangmanListener);
 
         fragmentManager = getSupportFragmentManager();
         mHandler = new Handler();
@@ -147,5 +154,29 @@ public class HomeActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         mHandler.removeCallbacks(mRunnable);
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle(R.string.string_exit)
+                .setMessage(R.string.string_confirm_exit)
+                .setCancelable(false)
+                .setPositiveButton(R.string.string_yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        moveTaskToBack(true);
+                        android.os.Process.killProcess(android.os.Process.myPid());
+                        System.exit(1);
+                    }
+                })
+                .setNegativeButton(R.string.string_no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                })
+                .create();
+        dialog.show();
     }
 }

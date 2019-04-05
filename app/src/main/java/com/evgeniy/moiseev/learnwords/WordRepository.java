@@ -10,7 +10,6 @@ import com.evgeniy.moiseev.learnwords.data.Word;
 import com.evgeniy.moiseev.learnwords.data.WordDAO;
 import com.evgeniy.moiseev.learnwords.data.WordDatabase;
 
-import java.util.Arrays;
 import java.util.List;
 
 import androidx.lifecycle.LiveData;
@@ -82,12 +81,36 @@ public class WordRepository {
         new updateDifficultyAsyncTask(mWordDao, difficulty).execute(word);
     }
 
+    public void updateTrained(String word1, int trained) {
+        new updateTrainedAsynckTask(mIrregularDao, trained).execute(word1);
+    }
+
+    private static class updateTrainedAsynckTask extends AsyncTask<String, Void, Void> {
+        private IrregularVerbDAO mDao;
+        private int mTrained;
+
+        public updateTrainedAsynckTask(IrregularVerbDAO irregularDao, int trained) {
+            mDao = irregularDao;
+            mTrained = trained;
+        }
+
+        @Override
+        protected Void doInBackground(String... strings) {
+            mDao.updateTrained(strings[0], mTrained);
+            return null;
+        }
+    }
+
     public void updateFavorite(String word, int isFavorite) {
         new updateFavoriteAsyncTask(mWordDao, isFavorite).execute(word);
     }
 
-    public void clearFavorites(){
+    public void clearFavorites() {
         new clearFavoritesAsyncTask(mWordDao).execute();
+    }
+
+    public void clearIrregulars() {
+        new clearIrregularsAsyncTask(mIrregularDao).execute();
     }
 
     private static class insertAsyncTask extends AsyncTask<List<Word>, Void, Void> {
@@ -242,6 +265,21 @@ public class WordRepository {
         @Override
         protected Integer doInBackground(Void... voids) {
             int updatedRowsCount = mAsyncTaskDao.clearFavorites();
+            Log.d(LOG_TAG, "Updated " + String.valueOf(updatedRowsCount) + " rows");
+            return null;
+        }
+    }
+
+    private static class clearIrregularsAsyncTask extends AsyncTask<Void, Void, Integer> {
+        private IrregularVerbDAO mAsyncTaskDao;
+
+        clearIrregularsAsyncTask(IrregularVerbDAO dao) {
+            mAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Integer doInBackground(Void... voids) {
+            int updatedRowsCount = mAsyncTaskDao.clearIrregulars();
             Log.d(LOG_TAG, "Updated " + String.valueOf(updatedRowsCount) + " rows");
             return null;
         }

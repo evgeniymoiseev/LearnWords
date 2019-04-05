@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 import com.evgeniy.moiseev.learnwords.adapters.ChooseCategoryAdapter;
@@ -52,6 +53,7 @@ public class TrainingModeActivity extends AppCompatActivity implements ChooseCat
             }
             mAdapter = new ChooseCategoryAdapter(TrainingModeActivity.this, mLocale, mCategories, mCategoriesMap, TrainingModeActivity.this);
             mRecyclerView.setAdapter(mAdapter);
+            mRecyclerView.setLayoutAnimation(AnimationUtils.loadLayoutAnimation(TrainingModeActivity.this, R.anim.layout_animation_fall_down));
         }
     };
     private ChipGroup.OnCheckedChangeListener chipListener = new ChipGroup.OnCheckedChangeListener() {
@@ -128,5 +130,11 @@ public class TrainingModeActivity extends AppCompatActivity implements ChooseCat
     public void categoryChanged(String category, String originCategory) {
         mCategory = category;
         mOriginCategory = originCategory;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(TrainingModeActivity.this, HomeActivity.class);
+        startActivity(intent);
     }
 }

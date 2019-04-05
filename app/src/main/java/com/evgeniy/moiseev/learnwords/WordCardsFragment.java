@@ -2,6 +2,7 @@ package com.evgeniy.moiseev.learnwords;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +37,10 @@ public class WordCardsFragment extends Fragment {
     private ViewPager.OnPageChangeListener onPageChangeListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+            if (positionOffset == 0)
+                buttonStartTraining.setOnClickListener(onStartTrainingListener);
+            else
+                buttonStartTraining.setOnClickListener(null);
         }
 
         @Override
@@ -113,15 +117,6 @@ public class WordCardsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_word_cards, container, false);
         mViewPager = rootView.findViewById(R.id.viewPagerCards);
-        mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (positionOffset == 0)
-                    buttonStartTraining.setOnClickListener(onStartTrainingListener);
-                else
-                    buttonStartTraining.setOnClickListener(null);
-            }
-        });
         imageViewSpeech = rootView.findViewById(R.id.imageSpeech);
         imageViewSpeechSlow = rootView.findViewById(R.id.imageSpeechSlow);
         buttonStartTraining = rootView.findViewById(R.id.buttonStartTraining);

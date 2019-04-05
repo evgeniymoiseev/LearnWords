@@ -93,8 +93,14 @@ public class FragmentGame extends Fragment {
         @Override
         public void onClick(View v) {
             buttonTest.setOnClickListener(null);
+            buttonTest.setClickable(false);
             for (View view : mButtons) {
-                view.setEnabled(false);
+                if (view instanceof ImageButton) {
+                    view.setEnabled(false);
+                    view.setAlpha(0.8f);
+                    ((ImageButton) view).setImageAlpha(77);
+                } else
+                    view.setEnabled(false);
             }
 
             //Is the answer right?

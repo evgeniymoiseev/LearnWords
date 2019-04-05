@@ -14,5 +14,6 @@
     </declare-styleable>
 
     <attr name="customChipStyle" format="reference"></attr>
+    <attr name="customChipStyleHangman" format="reference"></attr>
     <attr name="customOutlinedButtonStyle" format="reference"></attr>
 </resources>

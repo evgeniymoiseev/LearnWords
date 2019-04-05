@@ -2,7 +2,6 @@ package com.evgeniy.moiseev.learnwords;
 
 public class Alphabet {
     public static String getEng1() {
-
         return "qwertyuiop";
     }
 
@@ -13,7 +12,6 @@ public class Alphabet {
     public static String getEng3() {
         return "zxcvbnm";
     }
-
 
     public static String getRus1() {
         return "йцукенгшщзх";

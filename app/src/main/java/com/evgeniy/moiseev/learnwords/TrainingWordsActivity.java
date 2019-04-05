@@ -67,6 +67,7 @@ public class TrainingWordsActivity extends AppCompatActivity implements WordCard
     private int mCurrentType;
     private int mCurrentCount;
     private boolean mFirstTimeLoadingWords;
+    private boolean mTestEnded;
 
     private TextToSpeech mTextToSpeech;
     private Handler mHandler;
@@ -321,7 +322,7 @@ public class TrainingWordsActivity extends AppCompatActivity implements WordCard
         mTestedWords.clear();
         mCurrentCount = 0;
         setRandomWordAndType();
-        mHandler.postDelayed(startNewFragmentRunnable, 0);
+        mHandler.postDelayed(startNewFragmentRunnable, DEFAULT_DELAY_FRAGMENT_CHANGE);
     }
 
     @Override
@@ -349,7 +350,7 @@ public class TrainingWordsActivity extends AppCompatActivity implements WordCard
     public void onBackPressed() {
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle(R.string.string_back_home)
-                .setMessage(R.string.string_lost_progress)
+                .setMessage(mTestEnded ? R.string.string_saved_progress : R.string.string_lost_progress)
                 .setCancelable(false)
                 .setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
                     @Override
@@ -425,6 +426,7 @@ public class TrainingWordsActivity extends AppCompatActivity implements WordCard
             setRandomWordAndType();
             mHandler.postDelayed(startNewFragmentRunnable, DEFAULT_DELAY_FRAGMENT_CHANGE);
         } else {
+            mTestEnded = true;
             //Get simple words for recycler view
             final List<SimpleWord> simpleWords = updateWordsGuesses();
             mHandler.postDelayed(new Runnable() {
@@ -602,6 +604,7 @@ public class TrainingWordsActivity extends AppCompatActivity implements WordCard
 
     @Override
     public void onContinueClicked() {
+        mTestEnded = false;
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setMessage(R.string.string_show_cards)
                 .setCancelable(false)
@@ -613,6 +616,7 @@ public class TrainingWordsActivity extends AppCompatActivity implements WordCard
 
     @Override
     public void onNewWordsClicked() {
+        mTestEnded = false;
         updateTrainingWords();
         showOfferCardsDialog();
     }

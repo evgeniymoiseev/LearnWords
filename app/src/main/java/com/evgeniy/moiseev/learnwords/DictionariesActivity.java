@@ -54,6 +54,7 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
     private TextToSpeech mTextToSpeech;
     private AnimationUtils animation;
     private int mCurrentSection;
+    private FloatingActionButton fab;
 
     private FavoritesAdapter.OnFavoriteCardListener mOnFavoriteCardListener = new FavoritesAdapter.OnFavoriteCardListener() {
         @Override
@@ -234,6 +235,11 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
         public void onWord3Clicked(String word3) {
             mTextToSpeech.speak(word3, TextToSpeech.QUEUE_FLUSH, null, null);
         }
+
+        @Override
+        public void onCheckedClicked(String word1, boolean checked) {
+            ViewModelProviders.of(DictionariesActivity.this).get(DictionaryViewModel.class).updateTrainedIrregular(word1, checked ? 1 : 0);
+        }
     };
     private Toolbar.OnMenuItemClickListener bottomAppBarMenuClickListener = new Toolbar.OnMenuItemClickListener() {
         @Override
@@ -247,26 +253,48 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
                 case R.id.menu_sort:
                     break;
                 case R.id.menu_clear_favorites:
-                    DialogInterface.OnClickListener positiveListener = new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            ViewModelProviders.of(DictionariesActivity.this)
-                                    .get(DictionaryViewModel.class).clearFavorites();
-                        }
-                    };
-                    DialogInterface.OnClickListener negativeListener = new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    };
-                    AlertDialog alertDialog = new AlertDialog.Builder(DictionariesActivity.this)
-                            .setCancelable(false)
-                            .setMessage(R.string.string_clear_favorites)
-                            .setPositiveButton(R.string.string_yes, positiveListener)
-                            .setNegativeButton(R.string.button_cancel, negativeListener)
-                            .create();
-                    alertDialog.show();
+                    if (mCurrentSection == SECTION_FAVORITE) {
+                        DialogInterface.OnClickListener positiveListener = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                ViewModelProviders.of(DictionariesActivity.this)
+                                        .get(DictionaryViewModel.class).clearFavorites();
+                            }
+                        };
+                        DialogInterface.OnClickListener negativeListener = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        };
+                        AlertDialog alertDialog = new AlertDialog.Builder(DictionariesActivity.this)
+                                .setCancelable(false)
+                                .setMessage(R.string.string_clear_favorites)
+                                .setPositiveButton(R.string.string_yes, positiveListener)
+                                .setNegativeButton(R.string.button_cancel, negativeListener)
+                                .create();
+                        alertDialog.show();
+                    } else if (mCurrentSection == SECTION_IRREGULAR_VERBS) {
+                        DialogInterface.OnClickListener positiveListener = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                ViewModelProviders.of(DictionariesActivity.this).get(DictionaryViewModel.class).clearIrregulars();
+                            }
+                        };
+                        DialogInterface.OnClickListener negativeListener = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        };
+                        AlertDialog alertDialog = new AlertDialog.Builder(DictionariesActivity.this)
+                                .setCancelable(false)
+                                .setMessage(R.string.string_clear_verbs)
+                                .setPositiveButton(R.string.string_yes, positiveListener)
+                                .setNegativeButton(R.string.button_cancel, negativeListener)
+                                .create();
+                        alertDialog.show();
+                    }
                     break;
                 default:
                     String category = mCategories.getCategories().get(item.getItemId() - MENU_SELECTION_START_ID).getCategoryEng();
@@ -296,6 +324,25 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
             return true;
         }
     };
+    private View.OnClickListener fabListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            fab.setOnClickListener(null);
+            Intent intent = null;
+            switch (mCurrentSection) {
+                case SECTION_FAVORITE:
+                    intent = new Intent(DictionariesActivity.this, TrainingModeActivity.class);
+                    break;
+                case SECTION_VOCABULARY:
+                    intent = new Intent(DictionariesActivity.this, TrainingModeActivity.class);
+                    break;
+                case SECTION_IRREGULAR_VERBS:
+                    intent = new Intent(DictionariesActivity.this, IrregularVerbsModeActivity.class);
+                    break;
+            }
+            startActivity(intent);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -317,6 +364,13 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
         mBottomAppBar.replaceMenu(R.menu.bottom_appbar_menu);
         inflateMenuSort(mBottomAppBar.getMenu().findItem(R.id.menu_sort).getSubMenu());
         mBottomAppBar.setOnMenuItemClickListener(bottomAppBarMenuClickListener);
+        mBottomAppBar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DictionariesActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
         animation = new AnimationUtils(this);
 
@@ -351,7 +405,7 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
                         break;
                     case 2:
                         mCurrentSection = SECTION_IRREGULAR_VERBS;
-                        mBottomAppBar.getMenu().findItem(R.id.menu_clear_favorites).setVisible(false);
+                        mBottomAppBar.getMenu().findItem(R.id.menu_clear_favorites).setVisible(true);
                         mBottomAppBar.getMenu().findItem(R.id.menu_add).setVisible(false);
                         mBottomAppBar.getMenu().findItem(R.id.menu_sort).setVisible(false);
                         break;
@@ -359,24 +413,8 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
             }
         });
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = null;
-                switch (mCurrentSection) {
-                    case SECTION_FAVORITE:
-                        intent = new Intent(DictionariesActivity.this, TrainingModeActivity.class);
-                        break;
-                    case SECTION_VOCABULARY:
-                        intent = new Intent(DictionariesActivity.this, TrainingModeActivity.class);
-                        break;
-                    case SECTION_IRREGULAR_VERBS:
-                        break;
-                }
-                startActivity(intent);
-            }
-        });
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(fabListener);
     }
 
     public String getLocale() {
@@ -427,6 +465,12 @@ public class DictionariesActivity extends AppCompatActivity implements TextToSpe
 
     public IrregularVerbsAdapter.OnIrregularCardListener getOnIrregularCardListener() {
         return mOnIrregularCardListener;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        fab.setOnClickListener(fabListener);
     }
 
     @Override

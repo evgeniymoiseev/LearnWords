@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="customChipStyle">@style/CustomChipChoice</item>
+        <item name="customChipStyleHangman">@style/CustomChipChoiceHangman</item>
         <item name="customOutlinedButtonStyle">@style/CustomOutlinedButton</item>
     </style>
 
@@ -26,6 +27,12 @@
     <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
         <item name="chipBackgroundColor">@color/background_color_chip_state_list</item>
         <item name="android:textColor">@color/text_color_chip_state_list</item>
+        <item name="rippleColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomChipChoiceHangman" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_color_chip_state_list_hangman</item>
+        <item name="android:textColor">@color/text_color_chip_state_list_hangman</item>
         <item name="rippleColor">@color/colorPrimary</item>
     </style>
 

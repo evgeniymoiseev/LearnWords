@@ -1,11 +1,14 @@
 package com.evgeniy.moiseev.learnwords.adapters;
 
 import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.evgeniy.moiseev.learnwords.DictionariesActivity;
 import com.evgeniy.moiseev.learnwords.ListHolder;
 import com.evgeniy.moiseev.learnwords.R;
 import com.evgeniy.moiseev.learnwords.data.IrregularVerb;
@@ -18,10 +21,15 @@ import androidx.recyclerview.widget.RecyclerView;
 public class IrregularVerbsAdapter extends RecyclerView.Adapter<IrregularVerbsAdapter.ViewHolder> implements ListHolder {
     private List<IrregularVerb> mIrregularVerbs;
     private Context mContext;
+    private String mLocale;
     private OnIrregularCardListener mOnIrregularCardListener;
 
     public IrregularVerbsAdapter(Context context) {
         mContext = context;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            mLocale = mContext.getResources().getConfiguration().getLocales().get(0).getLanguage();
+        } else
+            mLocale = mContext.getResources().getConfiguration().locale.getLanguage();
     }
 
     @NonNull
@@ -60,7 +68,11 @@ public class IrregularVerbsAdapter extends RecyclerView.Adapter<IrregularVerbsAd
         holder.transcription2.setTextSize(measureTextSize(holder.transcription2.getText().toString()));
         holder.transcription3.setTextSize(measureTextSize(holder.transcription3.getText().toString()));
 
-        holder.translation.setText(mIrregularVerbs.get(position).getTranslationRus());
+        holder.translation.setText(mLocale.equals(DictionariesActivity.LOCALE_UKR) ?
+                mIrregularVerbs.get(position).getTranslationUkr() :
+                mIrregularVerbs.get(position).getTranslationRus());
+
+        holder.check.setChecked(mIrregularVerbs.get(position).getTrained() == 1);
     }
 
     @Override
@@ -83,6 +95,8 @@ public class IrregularVerbsAdapter extends RecyclerView.Adapter<IrregularVerbsAd
         void onWord2Clicked(String word2);
 
         void onWord3Clicked(String word3);
+
+        void onCheckedClicked(String word1, boolean checked);
     }
 
     private float measureTextSize(String text) {
@@ -110,6 +124,7 @@ public class IrregularVerbsAdapter extends RecyclerView.Adapter<IrregularVerbsAd
         TextView transcription2;
         TextView transcription3;
         TextView translation;
+        CheckBox check;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -120,6 +135,7 @@ public class IrregularVerbsAdapter extends RecyclerView.Adapter<IrregularVerbsAd
             transcription2 = itemView.findViewById(R.id.textViewTranscription2);
             transcription3 = itemView.findViewById(R.id.textViewTranscription3);
             translation = itemView.findViewById(R.id.textViewTranslation);
+            check = itemView.findViewById(R.id.checkTrained);
 
             if (mOnIrregularCardListener != null) {
                 itemView.findViewById(R.id.linear1).setOnClickListener(new View.OnClickListener() {
@@ -138,6 +154,12 @@ public class IrregularVerbsAdapter extends RecyclerView.Adapter<IrregularVerbsAd
                     @Override
                     public void onClick(View v) {
                         mOnIrregularCardListener.onWord3Clicked(word3.getText().toString());
+                    }
+                });
+                check.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mOnIrregularCardListener.onCheckedClicked(word1.getText().toString(), check.isChecked());
                     }
                 });
             }

@@ -15,4 +15,10 @@ public interface IrregularVerbDAO {
 
     @Insert
     void insertList(List<IrregularVerb> irregularVerbs);
+
+    @Query("UPDATE irregular_verbs SET trained = :trained WHERE word1 = :word1")
+    void updateTrained(String word1, int trained);
+
+    @Query("UPDATE irregular_verbs SET trained = 0")
+    int clearIrregulars();
 }

@@ -1,5 +1,6 @@
 package com.evgeniy.moiseev.learnwords;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.fragment.app.Fragment;
 public class FragmentPreviewVocabularies extends Fragment {
     private static final String ARG_POSITION = "position";
     private int mPosition;
+    private String mLocale;
 
     public FragmentPreviewVocabularies() {
     }
@@ -29,6 +31,10 @@ public class FragmentPreviewVocabularies extends Fragment {
         if (getArguments() != null) {
             mPosition = getArguments().getInt(ARG_POSITION);
         }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            mLocale = getResources().getConfiguration().getLocales().get(0).getLanguage();
+        } else
+            mLocale = getResources().getConfiguration().locale.getLanguage();
     }
 
     @Override
@@ -38,13 +44,13 @@ public class FragmentPreviewVocabularies extends Fragment {
         ImageView imageView = rootView.findViewById(R.id.imagePreviewDictionaries);
         switch (mPosition) {
             case 1:
-                imageView.setImageResource(R.drawable.screen_1_rus);
+                imageView.setImageResource(mLocale.equals(DictionariesActivity.LOCALE_UKR) ? R.drawable.screen_1_ukr : R.drawable.screen_1_rus);
                 break;
             case 2:
-                imageView.setImageResource(R.drawable.screen_2_rus);
+                imageView.setImageResource(mLocale.equals(DictionariesActivity.LOCALE_UKR) ? R.drawable.screen_2_ukr : R.drawable.screen_2_rus);
                 break;
             case 3:
-                imageView.setImageResource(R.drawable.screen_3_rus);
+                imageView.setImageResource(mLocale.equals(DictionariesActivity.LOCALE_UKR) ? R.drawable.screen_3_ukr : R.drawable.screen_3_rus);
                 break;
         }
         return rootView;

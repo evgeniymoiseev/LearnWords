@@ -26,6 +26,8 @@ public class CustomViewPageIndicator extends View {
     private DisplayMetrics metrics;
     private Path mPath;
     private Paint mPaint;
+    private Paint paintShape;
+    private Path pathShape;
     private List<Path> mPaths;
     private List<Paint> mPaints;
     private float mStep;
@@ -44,6 +46,11 @@ public class CustomViewPageIndicator extends View {
 
         mPaths = new ArrayList<>();
         mPaints = new ArrayList<>();
+
+        paintShape = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paintShape.setColor(getResources().getColor(R.color.colorNotSelectedTab));
+        paintShape.setStyle(Paint.Style.FILL);
+        pathShape = new Path();
 
         metrics = new DisplayMetrics();
         ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -66,6 +73,14 @@ public class CustomViewPageIndicator extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        pathShape.reset();
+        pathShape.moveTo(0, 0);
+        pathShape.lineTo(getWidth(), 0);
+        pathShape.lineTo(getWidth(), getHeight());
+        pathShape.lineTo(0, getHeight());
+        pathShape.lineTo(0, 0);
+        canvas.drawPath(pathShape, paintShape);
+
         mStep = metrics.widthPixels / (mCount * 2 + 1);
 
         float corner = getHeight() / 6f;

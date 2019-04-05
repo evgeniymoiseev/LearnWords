@@ -7,34 +7,20 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.evgeniy.moiseev.learnwords.R;
-import com.evgeniy.moiseev.learnwords.data.IrregularVerb;
+import com.evgeniy.moiseev.learnwords.data.SimpleIrregular;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class SimpleIrregularAdapter extends RecyclerView.Adapter<SimpleIrregularAdapter.ViewHolder> {
-    private List<IrregularVerb> mFullList;
-    private List<IrregularVerb> mFilteredList;
-    private boolean mFiltered;
+public class SimpleIrregularColoredAdapter extends RecyclerView.Adapter<SimpleIrregularColoredAdapter.ViewHolder> {
+    private List<SimpleIrregular> mList;
     private Context mContext;
 
-    public SimpleIrregularAdapter(List<IrregularVerb> irregular, Context context) {
-        mFullList = irregular;
-        mFilteredList = new ArrayList<>();
-        for (IrregularVerb i : mFullList) {
-            if (i.getTrained() == 1) {
-                mFilteredList.add(i);
-            }
-        }
+    public SimpleIrregularColoredAdapter(List<SimpleIrregular> list, Context context) {
+        mList = list;
         mContext = context;
-    }
-
-    public void setFiltered(boolean filtered) {
-        mFiltered = filtered;
-        notifyDataSetChanged();
     }
 
     @NonNull
@@ -47,14 +33,26 @@ public class SimpleIrregularAdapter extends RecyclerView.Adapter<SimpleIrregular
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.textViewWord1.setText(mFiltered ? mFilteredList.get(position).getWord1() : mFullList.get(position).getWord1());
-        holder.textViewWord2.setText(mFiltered ? mFilteredList.get(position).getWord2() : mFullList.get(position).getWord2());
-        holder.textViewWord3.setText(mFiltered ? mFilteredList.get(position).getWord3() : mFullList.get(position).getWord3());
+        holder.textViewWord1.setText(mList.get(position).getWord1());
+        holder.textViewWord1.setTextColor(mList.get(position).isB1() ?
+                mContext.getResources().getColor(R.color.colorIcons) : mContext.getResources().getColor(R.color.colorError));
+        holder.textViewWord2.setText(mList.get(position).getWord2());
+        holder.textViewWord2.setTextColor(mList.get(position).isB2() ?
+                mContext.getResources().getColor(R.color.colorIcons) : mContext.getResources().getColor(R.color.colorError));
+        holder.textViewWord3.setText(mList.get(position).getWord3());
+        holder.textViewWord3.setTextColor(mList.get(position).isB3() ?
+                mContext.getResources().getColor(R.color.colorIcons) : mContext.getResources().getColor(R.color.colorError));
+
+        if (mList.get(position).isRight()) {
+            holder.textViewWord1.setTextColor(mContext.getResources().getColor(R.color.colorGuessed));
+            holder.textViewWord2.setTextColor(mContext.getResources().getColor(R.color.colorGuessed));
+            holder.textViewWord3.setTextColor(mContext.getResources().getColor(R.color.colorGuessed));
+        }
     }
 
     @Override
     public int getItemCount() {
-        return mFiltered ? mFilteredList.size() : mFullList.size();
+        return mList.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {

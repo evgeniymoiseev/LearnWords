@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Learn Words</string>
+    <string name="app_name" translatable="false">Train Words</string>
     <string name="string_dictionaries">Dictionaries</string>
 
     <string name="tab_text_favourite">Favourite</string>
@@ -69,5 +69,27 @@
     <string name="string_clear_favorites">Clear favorites?</string>
     <string name="string_words_in_category">Words in category</string>
     <string name="string_lost_progress">Current progress will be lost.</string>
+    <string name="string_saved_progress">Progress saved.</string>
+    <string name="string_number_of_verbs">Number of verbs in training</string>
+    <string name="string_verbs_for_training">Verbs for training</string>
+    <string name="string_marked">Marked</string>
+    <string name="string_all">All</string>
+    <string name="string_next">next</string>
+    <string name="string_previous">previous</string>
+    <string name="string_next_verbs_set">Next verbs set</string>
+    <string name="string_not_enough_irregulars_description">It is necessary 1 verb at least for training</string>
+    <string name="string_result">Result</string>
+    <string name="string_exit">Exit</string>
+    <string name="string_confirm_exit">Do you really want to quit?</string>
+    <string name="string_train_words">Train words</string>
+    <string name="string_train_verbs">Irregular verbs</string>
+    <string name="string_clear_verbs">Clear selected verbs?</string>
+    <string name="string_start_game">Start game</string>
+    <string name="string_min_letters">Minimum letters in a word</string>
+    <string name="string_no_words">No words</string>
+    <string name="string_no_words_message">There are no words with such settings</string>
+    <string name="string_repeat">Next word</string>
+    <string name="string_victory">Victory!</string>
+    <string name="string_loose">Loose!</string>
 
 </resources>

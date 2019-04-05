@@ -69,6 +69,10 @@ public class DictionaryViewModel extends AndroidViewModel {
         mRepository.delete(word);
     }
 
+    public void updateTrainedIrregular(String word1, int trained) {
+        mRepository.updateTrained(word1, trained);
+    }
+
     public void updateDifficulty(String word, int difficulty) {
         mRepository.updateDifficulty(word, difficulty);
     }
@@ -79,6 +83,10 @@ public class DictionaryViewModel extends AndroidViewModel {
 
     public void clearFavorites() {
         mRepository.clearFavorites();
+    }
+
+    public void clearIrregulars() {
+        mRepository.clearIrregulars();
     }
 
     public List<Word> getFilterableWords(List<Word> words, String pattern, String category) {
