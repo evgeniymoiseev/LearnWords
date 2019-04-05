@@ -1,6 +1,7 @@
 [
     {
         "id": "1",
+        "trained": "0",
         "transcription1": "|əbʌid|",
         "transcription2": "|əbəud|",
         "transcription3": "|əbəud|",
@@ -12,6 +13,7 @@
     },
     {
         "id": "2",
+        "trained": "0",
         "transcription1": "|ə’raiz|",
         "transcription2": "|ə’rəuz|",
         "transcription3": "|ə’riz(ə)n|",
@@ -23,6 +25,7 @@
     },
     {
         "id": "3",
+        "trained": "0",
         "transcription1": "|ə’weik|",
         "transcription2": "|ə’wəuk|",
         "transcription3": "|ə’wəukən|",
@@ -34,6 +37,7 @@
     },
     {
         "id": "4",
+        "trained": "0",
         "transcription1": "|bi:|",
         "transcription2": "|wɔz| / |wз:|",
         "transcription3": "|bi:n|",
@@ -45,6 +49,7 @@
     },
     {
         "id": "5",
+        "trained": "0",
         "transcription1": "|bɛə|",
         "transcription2": "|bɔ:|",
         "transcription3": "|bɔ:n|",
@@ -56,6 +61,7 @@
     },
     {
         "id": "6",
+        "trained": "0",
         "transcription1": "|bi:t|",
         "transcription2": "|bi:t|",
         "transcription3": "|‘bi:tn|",
@@ -67,6 +73,7 @@
     },
     {
         "id": "7",
+        "trained": "0",
         "transcription1": "|bɪ ‘kʌm|",
         "transcription2": "|bɪ ‘keɪm|",
         "transcription3": "|bɪ ‘kʌm|",
@@ -78,6 +85,7 @@
     },
     {
         "id": "8",
+        "trained": "0",
         "transcription1": "|bɪ ‘gɪn|",
         "transcription2": "|bɪ ‘gæn|",
         "transcription3": "|bɪ ‘gʌn|",
@@ -89,6 +97,7 @@
     },
     {
         "id": "9",
+        "trained": "0",
         "transcription1": "|bˈhəʊld|",
         "transcription2": "|bɪˈhɛld|",
         "transcription3": "|bɪˈhɛld|",
@@ -100,6 +109,7 @@
     },
     {
         "id": "10",
+        "trained": "0",
         "transcription1": "|bend|",
         "transcription2": "|bent|",
         "transcription3": "|bent|",
@@ -111,6 +121,7 @@
     },
     {
         "id": "11",
+        "trained": "0",
         "transcription1": "|bɪˈriːv|",
         "transcription2": "|bɪˈrɛft| / |bɪˈriːvd|",
         "transcription3": "|bɪˈrɛft| / |bɪˈriːvd|",
@@ -122,6 +133,7 @@
     },
     {
         "id": "12",
+        "trained": "0",
         "transcription1": "|bɪˈsiːtʃ|",
         "transcription2": "|bɪˈsɔːt| / |bɪˈsiːtʃt|",
         "transcription3": "|bɪˈsɔːt| / |bɪˈsiːtʃt|",
@@ -133,6 +145,7 @@
     },
     {
         "id": "13",
+        "trained": "0",
         "transcription1": "|bɪˈsɛt|",
         "transcription2": "|bɪˈsɛt|",
         "transcription3": "|bɪˈsɛt|",
@@ -144,6 +157,7 @@
     },
     {
         "id": "14",
+        "trained": "0",
         "transcription1": "|bet|",
         "transcription2": "|bet|",
         "transcription3": "|bet|",
@@ -155,6 +169,7 @@
     },
     {
         "id": "15",
+        "trained": "0",
         "transcription1": "|bɪd|",
         "transcription2": "|bɪd| / |beɪd|",
         "transcription3": "|bɪdn|",
@@ -166,6 +181,7 @@
     },
     {
         "id": "16",
+        "trained": "0",
         "transcription1": "|baɪnd|",
         "transcription2": "|baʊnd|",
         "transcription3": "|baʊnd|",
@@ -177,6 +193,7 @@
     },
     {
         "id": "17",
+        "trained": "0",
         "transcription1": "|baɪt|",
         "transcription2": "|bɪt|",
         "transcription3": "|‘bɪtn|",
@@ -188,6 +205,7 @@
     },
     {
         "id": "18",
+        "trained": "0",
         "transcription1": "|bli:d|",
         "transcription2": "|bled|",
         "transcription3": "|bled|",
@@ -199,6 +217,7 @@
     },
     {
         "id": "19",
+        "trained": "0",
         "transcription1": "|blou|",
         "transcription2": "|blu:|",
         "transcription3": "|bloun|",
@@ -210,6 +229,7 @@
     },
     {
         "id": "20",
+        "trained": "0",
         "transcription1": "|breɪk|",
         "transcription2": "|brouk|",
         "transcription3": "|‘broukən|",
@@ -221,6 +241,7 @@
     },
     {
         "id": "21",
+        "trained": "0",
         "transcription1": "|bri:d|",
         "transcription2": "|bred|",
         "transcription3": "|bred|",
@@ -232,6 +253,7 @@
     },
     {
         "id": "22",
+        "trained": "0",
         "transcription1": "|brɪŋ|",
         "transcription2": "|brɔ:t|",
         "transcription3": "|brɔ:t|",
@@ -243,6 +265,7 @@
     },
     {
         "id": "23",
+        "trained": "0",
         "transcription1": "|‘braubi:t|",
         "transcription2": "|‘braubi:t|",
         "transcription3": "|‘braubi:tn| / |‘braubi:t|",
@@ -254,6 +277,7 @@
     },
     {
         "id": "24",
+        "trained": "0",
         "transcription1": "|bɪld|",
         "transcription2": "|bɪlt|",
         "transcription3": "|bɪlt|",
@@ -265,6 +289,7 @@
     },
     {
         "id": "25",
+        "trained": "0",
         "transcription1": "|bɜ:rn|",
         "transcription2": "|bз:nt|",
         "transcription3": "|bз:nt|",
@@ -276,6 +301,7 @@
     },
     {
         "id": "26",
+        "trained": "0",
         "transcription1": "|bз:st|",
         "transcription2": "|bз:st|",
         "transcription3": "|bз:st|",
@@ -287,6 +313,7 @@
     },
     {
         "id": "27",
+        "trained": "0",
         "transcription1": "|bʌst|",
         "transcription2": "|bʌstɪd| / |bʌst|",
         "transcription3": "|bʌstɪd| / |bʌst|",
@@ -298,6 +325,7 @@
     },
     {
         "id": "28",
+        "trained": "0",
         "transcription1": "|baɪ|",
         "transcription2": "|bɔ:t|",
         "transcription3": "|bɔ:t|",
@@ -309,6 +337,7 @@
     },
     {
         "id": "29",
+        "trained": "0",
         "transcription1": "|kɑ:st|",
         "transcription2": "|kɑ:st|",
         "transcription3": "|kɑ:st|",
@@ -320,6 +349,7 @@
     },
     {
         "id": "30",
+        "trained": "0",
         "transcription1": "|kætʃ|",
         "transcription2": "|kɔ:t|",
         "transcription3": "|kɔ:t|",
@@ -331,6 +361,7 @@
     },
     {
         "id": "31",
+        "trained": "0",
         "transcription1": "|tʃu:z|",
         "transcription2": "|tʃouz|",
         "transcription3": "|‘tʃouzən|",
@@ -342,6 +373,7 @@
     },
     {
         "id": "32",
+        "trained": "0",
         "transcription1": "|kli:v|",
         "transcription2": "|klɛft|",
         "transcription3": "|klɛft|",
@@ -353,6 +385,7 @@
     },
     {
         "id": "33",
+        "trained": "0",
         "transcription1": "|klɪŋ|",
         "transcription2": "|klʌŋ|",
         "transcription3": "|klʌŋ|",
@@ -364,6 +397,7 @@
     },
     {
         "id": "34",
+        "trained": "0",
         "transcription1": "|kloʊð|",
         "transcription2": "|kloʊðd| / |klæd|",
         "transcription3": "|kloʊðd| / |klæd|",
@@ -375,6 +409,7 @@
     },
     {
         "id": "35",
+        "trained": "0",
         "transcription1": "|kʌm|",
         "transcription2": "|keɪm|",
         "transcription3": "|kʌm|",
@@ -386,6 +421,7 @@
     },
     {
         "id": "36",
+        "trained": "0",
         "transcription1": "|kɒst|",
         "transcription2": "|kɒst|",
         "transcription3": "|kɒst|",
@@ -397,6 +433,7 @@
     },
     {
         "id": "37",
+        "trained": "0",
         "transcription1": "|kri:p|",
         "transcription2": "|krept|",
         "transcription3": "|krept|",
@@ -408,6 +445,7 @@
     },
     {
         "id": "38",
+        "trained": "0",
         "transcription1": "|kʌt|",
         "transcription2": "|kʌt|",
         "transcription3": "|kʌt|",
@@ -419,10 +457,11 @@
     },
     {
         "id": "39",
+        "trained": "0",
         "transcription1": "|di:l|",
         "transcription2": "|dɛlt|",
         "transcription3": "|dɛlt|",
-        "translationRus": "иметь дело / торговать / рассматривать вопрос",
+        "translationRus": "иметь дело / торговать",
         "translationUkr": "мати справу",
         "word1": "deal",
         "word2": "dealt",
@@ -430,6 +469,7 @@
     },
     {
         "id": "40",
+        "trained": "0",
         "transcription1": "|dɪg|",
         "transcription2": "|dʌg|",
         "transcription3": "|dʌg|",
@@ -441,6 +481,7 @@
     },
     {
         "id": "41",
+        "trained": "0",
         "transcription1": "|dɪsˈpruːv|",
         "transcription2": "|dɪsˈpruːvd|",
         "transcription3": "|dɪsˈpruːvd| / |dɪsˈpru:vən|",
@@ -452,6 +493,7 @@
     },
     {
         "id": "42",
+        "trained": "0",
         "transcription1": "|daɪv|",
         "transcription2": "|doʊv| / |daɪvd|",
         "transcription3": "|daɪvd|",
@@ -463,6 +505,7 @@
     },
     {
         "id": "43",
+        "trained": "0",
         "transcription1": "|du:|",
         "transcription2": "|dɪd|",
         "transcription3": "|dʌn|",
@@ -474,6 +517,7 @@
     },
     {
         "id": "44",
+        "trained": "0",
         "transcription1": "|drɔ:|",
         "transcription2": "|dru:|",
         "transcription3": "|drɔ:n|",
@@ -485,6 +529,7 @@
     },
     {
         "id": "45",
+        "trained": "0",
         "transcription1": "|dri:m|",
         "transcription2": "|dremt|",
         "transcription3": "|dremt|",
@@ -496,6 +541,7 @@
     },
     {
         "id": "46",
+        "trained": "0",
         "transcription1": "|drɪŋk|",
         "transcription2": "|dræŋk|",
         "transcription3": "|drʌŋk|",
@@ -507,6 +553,7 @@
     },
     {
         "id": "47",
+        "trained": "0",
         "transcription1": "|draɪv|",
         "transcription2": "|drouv|",
         "transcription3": "|‘drɪvən|",
@@ -518,10 +565,11 @@
     },
     {
         "id": "48",
+        "trained": "0",
         "transcription1": "|dwel|",
         "transcription2": "|dwɛlt| / |dwɛld|",
         "transcription3": "|dwɛlt| / |dwɛld|",
-        "translationRus": "обитать / пребывать / задерживаться на чем-либо",
+        "translationRus": "обитать / пребывать",
         "translationUkr": "проживати / жити",
         "word1": "dwell",
         "word2": "dwelt / dwelled",
@@ -529,6 +577,7 @@
     },
     {
         "id": "49",
+        "trained": "0",
         "transcription1": "|i:t|",
         "transcription2": "|eɪt / et|",
         "transcription3": "|‘i:tn|",
@@ -540,6 +589,7 @@
     },
     {
         "id": "50",
+        "trained": "0",
         "transcription1": "|fɔ:l|",
         "transcription2": "|fel|",
         "transcription3": "|‘fɔ:lən|",
@@ -551,6 +601,7 @@
     },
     {
         "id": "51",
+        "trained": "0",
         "transcription1": "|fi:d|",
         "transcription2": "|fed|",
         "transcription3": "|fed|",
@@ -562,6 +613,7 @@
     },
     {
         "id": "52",
+        "trained": "0",
         "transcription1": "|fi:l|",
         "transcription2": "|felt|",
         "transcription3": "|felt|",
@@ -573,6 +625,7 @@
     },
     {
         "id": "53",
+        "trained": "0",
         "transcription1": "|faɪt|",
         "transcription2": "|fɔ:t|",
         "transcription3": "|fɔ:t|",
@@ -584,6 +637,7 @@
     },
     {
         "id": "54",
+        "trained": "0",
         "transcription1": "|faɪnd|",
         "transcription2": "|faʊnd|",
         "transcription3": "|faʊnd|",
@@ -595,6 +649,7 @@
     },
     {
         "id": "55",
+        "trained": "0",
         "transcription1": "|fit|",
         "transcription2": "|fit|",
         "transcription3": "|fit|",
@@ -606,6 +661,7 @@
     },
     {
         "id": "56",
+        "trained": "0",
         "transcription1": "|fli:|",
         "transcription2": "|flɛd|",
         "transcription3": "|flɛd|",
@@ -617,6 +673,7 @@
     },
     {
         "id": "57",
+        "trained": "0",
         "transcription1": "|flɪŋ|",
         "transcription2": "|flʌŋ|",
         "transcription3": "|flʌŋ|",
@@ -628,6 +685,7 @@
     },
     {
         "id": "58",
+        "trained": "0",
         "transcription1": "|flaɪ|",
         "transcription2": "|flu:|",
         "transcription3": "|floun|",
@@ -639,6 +697,7 @@
     },
     {
         "id": "59",
+        "trained": "0",
         "transcription1": "|fəˈbɪd|",
         "transcription2": "|fəˈbeɪd|",
         "transcription3": "|fəbɪdn|",
@@ -650,6 +709,7 @@
     },
     {
         "id": "60",
+        "trained": "0",
         "transcription1": "|‘fɔ:ka:st|",
         "transcription2": "|‘fɔ:ka:st|",
         "transcription3": "|‘fɔ:ka:st|",
@@ -661,6 +721,7 @@
     },
     {
         "id": "61",
+        "trained": "0",
         "transcription1": "|fɔːˈsiː|",
         "transcription2": "|fɔːˈsɔː|",
         "transcription3": "|fɔːˈsiːn|",
@@ -672,6 +733,7 @@
     },
     {
         "id": "62",
+        "trained": "0",
         "transcription1": "|fɔːˈtɛl|",
         "transcription2": "|fɔːˈtəʊld|",
         "transcription3": "|fɔːˈtəʊld|",
@@ -683,6 +745,7 @@
     },
     {
         "id": "63",
+        "trained": "0",
         "transcription1": "|fər ‘get|",
         "transcription2": "|fər ‘gɒt|",
         "transcription3": "|fər ‘gɒtn|",
@@ -694,6 +757,7 @@
     },
     {
         "id": "64",
+        "trained": "0",
         "transcription1": "|fər ‘gɪv|",
         "transcription2": "|fər ‘geɪv|",
         "transcription3": "|fər ‘gɪvən|",
@@ -705,6 +769,7 @@
     },
     {
         "id": "65",
+        "trained": "0",
         "transcription1": "|fɔːˈɡəʊ|",
         "transcription2": "|fɔːˈwɛnt|",
         "transcription3": "|fɔːˈɡɒn|",
@@ -716,6 +781,7 @@
     },
     {
         "id": "66",
+        "trained": "0",
         "transcription1": "|fəˈseɪk|",
         "transcription2": "|fəˈsʊk|",
         "transcription3": "|fəˈseɪkn|",
@@ -727,6 +793,7 @@
     },
     {
         "id": "67",
+        "trained": "0",
         "transcription1": "|fri:z|",
         "transcription2": "|frouz|",
         "transcription3": "|‘frouzən|",
@@ -738,6 +805,7 @@
     },
     {
         "id": "68",
+        "trained": "0",
         "transcription1": "|get|",
         "transcription2": "|gɒt|",
         "transcription3": "|gɒt|",
@@ -749,6 +817,7 @@
     },
     {
         "id": "69",
+        "trained": "0",
         "transcription1": "|gɪld|",
         "transcription2": "|gɪlt|",
         "transcription3": "|gɪlt|",
@@ -760,6 +829,7 @@
     },
     {
         "id": "70",
+        "trained": "0",
         "transcription1": "|gɪv|",
         "transcription2": "|geɪv|",
         "transcription3": "|‘gɪvən|",
@@ -771,6 +841,7 @@
     },
     {
         "id": "71",
+        "trained": "0",
         "transcription1": "|gou|",
         "transcription2": "|went|",
         "transcription3": "|gɒn|",
@@ -782,6 +853,7 @@
     },
     {
         "id": "72",
+        "trained": "0",
         "transcription1": "|graɪnd|",
         "transcription2": "|graʊnd|",
         "transcription3": "|graʊnd|",
@@ -793,6 +865,7 @@
     },
     {
         "id": "73",
+        "trained": "0",
         "transcription1": "|grou|",
         "transcription2": "|gru:|",
         "transcription3": "|groun|",
@@ -804,6 +877,7 @@
     },
     {
         "id": "74",
+        "trained": "0",
         "transcription1": "|hæŋ|",
         "transcription2": "|hʌŋ|",
         "transcription3": "|hʌŋ|",
@@ -815,6 +889,7 @@
     },
     {
         "id": "75",
+        "trained": "0",
         "transcription1": "|hæv|",
         "transcription2": "|hæd|",
         "transcription3": "|hæd|",
@@ -826,6 +901,7 @@
     },
     {
         "id": "76",
+        "trained": "0",
         "transcription1": "|hɪər|",
         "transcription2": "|hɜ:rd|",
         "transcription3": "|hɜ:rd|",
@@ -837,6 +913,7 @@
     },
     {
         "id": "77",
+        "trained": "0",
         "transcription1": "|hi:v|",
         "transcription2": "|həʊv| / |hi:vd|",
         "transcription3": "|həʊv| / |hi:vd|",
@@ -848,6 +925,7 @@
     },
     {
         "id": "78",
+        "trained": "0",
         "transcription1": "|hju:|",
         "transcription2": "|hju:d|",
         "transcription3": "|hju:d| / |hju:n|",
@@ -859,6 +937,7 @@
     },
     {
         "id": "79",
+        "trained": "0",
         "transcription1": "|haɪd|",
         "transcription2": "|hɪd|",
         "transcription3": "|‘hɪdn|",
@@ -870,6 +949,7 @@
     },
     {
         "id": "80",
+        "trained": "0",
         "transcription1": "|hɪt|",
         "transcription2": "|hɪt|",
         "transcription3": "|hɪt|",
@@ -881,6 +961,7 @@
     },
     {
         "id": "81",
+        "trained": "0",
         "transcription1": "|hould|",
         "transcription2": "|held|",
         "transcription3": "|held|",
@@ -892,6 +973,7 @@
     },
     {
         "id": "82",
+        "trained": "0",
         "transcription1": "|hɜ:rt|",
         "transcription2": "|hɜ:rt|",
         "transcription3": "|hɜ:rt|",
@@ -903,6 +985,7 @@
     },
     {
         "id": "83",
+        "trained": "0",
         "transcription1": "|ɪnˈleɪ|",
         "transcription2": "|ɪnˈleɪd|",
         "transcription3": "|ɪnˈleɪd|",
@@ -914,6 +997,7 @@
     },
     {
         "id": "84",
+        "trained": "0",
         "transcription1": "|ˈɪnpʊt|",
         "transcription2": "|ˈɪnpʊt|",
         "transcription3": "|ˈɪnpʊt|",
@@ -925,6 +1009,7 @@
     },
     {
         "id": "85",
+        "trained": "0",
         "transcription1": "|ɪntəˈwiːv|",
         "transcription2": "|ɪntəˈwəʊv|",
         "transcription3": "|ɪntəˈwəʊv(ə)n|",
@@ -936,6 +1021,7 @@
     },
     {
         "id": "86",
+        "trained": "0",
         "transcription1": "|ki:p|",
         "transcription2": "|kept|",
         "transcription3": "|kept|",
@@ -947,6 +1033,7 @@
     },
     {
         "id": "87",
+        "trained": "0",
         "transcription1": "|ni:l|",
         "transcription2": "|nelt|",
         "transcription3": "|nelt|",
@@ -958,6 +1045,7 @@
     },
     {
         "id": "88",
+        "trained": "0",
         "transcription1": "|nɪt|",
         "transcription2": "|nɪt|",
         "transcription3": "|nɪt|",
@@ -969,6 +1057,7 @@
     },
     {
         "id": "89",
+        "trained": "0",
         "transcription1": "|nou|",
         "transcription2": "|nu:|",
         "transcription3": "|noun|",
@@ -980,6 +1069,7 @@
     },
     {
         "id": "90",
+        "trained": "0",
         "transcription1": "|leɪ|",
         "transcription2": "|leɪd|",
         "transcription3": "|leɪd|",
@@ -991,6 +1081,7 @@
     },
     {
         "id": "91",
+        "trained": "0",
         "transcription1": "|li:d|",
         "transcription2": "|led|",
         "transcription3": "|led|",
@@ -1002,6 +1093,7 @@
     },
     {
         "id": "92",
+        "trained": "0",
         "transcription1": "|li:n|",
         "transcription2": "|lent|",
         "transcription3": "|lent|",
@@ -1013,6 +1105,7 @@
     },
     {
         "id": "93",
+        "trained": "0",
         "transcription1": "|li:p|",
         "transcription2": "|lɛpt|",
         "transcription3": "|lɛpt|",
@@ -1024,6 +1117,7 @@
     },
     {
         "id": "94",
+        "trained": "0",
         "transcription1": "|lɜ:rn|",
         "transcription2": "|lɜ:rnt|",
         "transcription3": "|lɜ:rnt|",
@@ -1035,6 +1129,7 @@
     },
     {
         "id": "95",
+        "trained": "0",
         "transcription1": "|li:v|",
         "transcription2": "|left|",
         "transcription3": "|left|",
@@ -1046,6 +1141,7 @@
     },
     {
         "id": "96",
+        "trained": "0",
         "transcription1": "|lend|",
         "transcription2": "|lent|",
         "transcription3": "|lent|",
@@ -1057,6 +1153,7 @@
     },
     {
         "id": "97",
+        "trained": "0",
         "transcription1": "|let|",
         "transcription2": "|let|",
         "transcription3": "|let|",
@@ -1068,6 +1165,7 @@
     },
     {
         "id": "98",
+        "trained": "0",
         "transcription1": "|laɪ|",
         "transcription2": "|leɪ|",
         "transcription3": "|leɪn|",
@@ -1079,6 +1177,7 @@
     },
     {
         "id": "99",
+        "trained": "0",
         "transcription1": "|lait|",
         "transcription2": "|lit|",
         "transcription3": "|lit|",
@@ -1090,6 +1189,7 @@
     },
     {
         "id": "100",
+        "trained": "0",
         "transcription1": "|lu:z|",
         "transcription2": "|lɒst|",
         "transcription3": "|lɒst|",
@@ -1101,6 +1201,7 @@
     },
     {
         "id": "101",
+        "trained": "0",
         "transcription1": "|meɪk|",
         "transcription2": "|meɪd|",
         "transcription3": "|meɪd|",
@@ -1112,6 +1213,7 @@
     },
     {
         "id": "102",
+        "trained": "0",
         "transcription1": "|mi:n|",
         "transcription2": "|ment|",
         "transcription3": "|ment|",
@@ -1123,6 +1225,7 @@
     },
     {
         "id": "103",
+        "trained": "0",
         "transcription1": "|mi:t|",
         "transcription2": "|met|",
         "transcription3": "|met|",
@@ -1134,6 +1237,7 @@
     },
     {
         "id": "104",
+        "trained": "0",
         "transcription1": "|mis’teik|",
         "transcription2": "|mis’tuk|",
         "transcription3": "|mis’teik(e)n|",
@@ -1145,6 +1249,7 @@
     },
     {
         "id": "105",
+        "trained": "0",
         "transcription1": "|moʊ|",
         "transcription2": "|moʊd|",
         "transcription3": "|moʊn|",
@@ -1156,6 +1261,7 @@
     },
     {
         "id": "106",
+        "trained": "0",
         "transcription1": "|əʊvəˈkʌm|",
         "transcription2": "|əʊvəˈkeɪm|",
         "transcription3": "|əʊvəˈkʌm|",
@@ -1167,6 +1273,7 @@
     },
     {
         "id": "107",
+        "trained": "0",
         "transcription1": "|peɪ|",
         "transcription2": "|peɪd|",
         "transcription3": "|peɪd|",
@@ -1178,6 +1285,7 @@
     },
     {
         "id": "108",
+        "trained": "0",
         "transcription1": "|pli:d|",
         "transcription2": "|pli:dɪd| / |plɛd|",
         "transcription3": "|pli:dɪd| / |plɛd|",
@@ -1189,6 +1297,7 @@
     },
     {
         "id": "109",
+        "trained": "0",
         "transcription1": "|pru:v|",
         "transcription2": "|pru:vd|",
         "transcription3": "|pru:vn|",
@@ -1200,6 +1309,7 @@
     },
     {
         "id": "110",
+        "trained": "0",
         "transcription1": "|pʊt|",
         "transcription2": "|pʊt|",
         "transcription3": "|pʊt|",
@@ -1211,6 +1321,7 @@
     },
     {
         "id": "111",
+        "trained": "0",
         "transcription1": "|kwit|",
         "transcription2": "|kwit|",
         "transcription3": "|kwit|",
@@ -1222,6 +1333,7 @@
     },
     {
         "id": "112",
+        "trained": "0",
         "transcription1": "|ri:d|",
         "transcription2": "|red|",
         "transcription3": "|red|",
@@ -1233,6 +1345,7 @@
     },
     {
         "id": "113",
+        "trained": "0",
         "transcription1": "|rɪˈleɪ|",
         "transcription2": "|rɪˈleɪd|",
         "transcription3": "|rɪˈleɪd|",
@@ -1244,6 +1357,7 @@
     },
     {
         "id": "114",
+        "trained": "0",
         "transcription1": "|rɪd|",
         "transcription2": "|rɪd|",
         "transcription3": "|rɪd|",
@@ -1255,6 +1369,7 @@
     },
     {
         "id": "115",
+        "trained": "0",
         "transcription1": "|raɪd|",
         "transcription2": "|roud|",
         "transcription3": "|‘rɪdn|",
@@ -1266,6 +1381,7 @@
     },
     {
         "id": "116",
+        "trained": "0",
         "transcription1": "|rɪŋ|",
         "transcription2": "|ræŋ|",
         "transcription3": "|rʌŋ|",
@@ -1277,6 +1393,7 @@
     },
     {
         "id": "117",
+        "trained": "0",
         "transcription1": "|raɪz|",
         "transcription2": "|rouz|",
         "transcription3": "|‘rɪzən|",
@@ -1288,6 +1405,7 @@
     },
     {
         "id": "118",
+        "trained": "0",
         "transcription1": "|rʌn|",
         "transcription2": "|ræn|",
         "transcription3": "|rʌn|",
@@ -1299,6 +1417,7 @@
     },
     {
         "id": "119",
+        "trained": "0",
         "transcription1": "|sɔ:|",
         "transcription2": "|sɔ:d|",
         "transcription3": "|sɔ:d| / |sɔ:n|",
@@ -1310,6 +1429,7 @@
     },
     {
         "id": "120",
+        "trained": "0",
         "transcription1": "|seɪ|",
         "transcription2": "|sed|",
         "transcription3": "|sed|",
@@ -1321,6 +1441,7 @@
     },
     {
         "id": "121",
+        "trained": "0",
         "transcription1": "|si:|",
         "transcription2": "|sɔ:|",
         "transcription3": "|si:n|",
@@ -1332,6 +1453,7 @@
     },
     {
         "id": "122",
+        "trained": "0",
         "transcription1": "|si:k|",
         "transcription2": "|sɔ:t|",
         "transcription3": "|sɔ:t|",
@@ -1343,6 +1465,7 @@
     },
     {
         "id": "123",
+        "trained": "0",
         "transcription1": "|sel|",
         "transcription2": "|sould|",
         "transcription3": "|sould|",
@@ -1354,6 +1477,7 @@
     },
     {
         "id": "124",
+        "trained": "0",
         "transcription1": "|send|",
         "transcription2": "|sent|",
         "transcription3": "|sent|",
@@ -1365,6 +1489,7 @@
     },
     {
         "id": "125",
+        "trained": "0",
         "transcription1": "|set|",
         "transcription2": "|set|",
         "transcription3": "|set|",
@@ -1376,6 +1501,7 @@
     },
     {
         "id": "126",
+        "trained": "0",
         "transcription1": "|sou|",
         "transcription2": "|soud|",
         "transcription3": "|soun|",
@@ -1387,6 +1513,7 @@
     },
     {
         "id": "127",
+        "trained": "0",
         "transcription1": "|ʃeɪk|",
         "transcription2": "|ʃʊk|",
         "transcription3": "|‘ʃeɪkən|",
@@ -1398,6 +1525,7 @@
     },
     {
         "id": "128",
+        "trained": "0",
         "transcription1": "|ʃeɪv|",
         "transcription2": "|ʃeɪvd|",
         "transcription3": "|ʃeɪvd| / |ʃeɪvən|",
@@ -1409,6 +1537,7 @@
     },
     {
         "id": "129",
+        "trained": "0",
         "transcription1": "|ʃɪə|",
         "transcription2": "|ʃɪəd|",
         "transcription3": "|ʃɪəd| / |ʃɔ:n|",
@@ -1420,6 +1549,7 @@
     },
     {
         "id": "130",
+        "trained": "0",
         "transcription1": "|ʃed|",
         "transcription2": "|ʃed|",
         "transcription3": "|ʃed|",
@@ -1431,6 +1561,7 @@
     },
     {
         "id": "131",
+        "trained": "0",
         "transcription1": "|ʃaɪn|",
         "transcription2": "|ʃoun / ʃɒn|",
         "transcription3": "|ʃoun / ʃɒn|",
@@ -1442,6 +1573,7 @@
     },
     {
         "id": "132",
+        "trained": "0",
         "transcription1": "|ʃit|",
         "transcription2": "|ʃit|",
         "transcription3": "|ʃit|",
@@ -1453,6 +1585,7 @@
     },
     {
         "id": "133",
+        "trained": "0",
         "transcription1": "|ʃu:|",
         "transcription2": "|ʃɒd|",
         "transcription3": "|ʃɒd|",
@@ -1464,6 +1597,7 @@
     },
     {
         "id": "134",
+        "trained": "0",
         "transcription1": "|ʃu:t|",
         "transcription2": "|ʃɒt|",
         "transcription3": "|ʃɒt|",
@@ -1475,6 +1609,7 @@
     },
     {
         "id": "135",
+        "trained": "0",
         "transcription1": "|ʃou|",
         "transcription2": "|ʃoud|",
         "transcription3": "|ʃoun|",
@@ -1486,6 +1621,7 @@
     },
     {
         "id": "136",
+        "trained": "0",
         "transcription1": "|ʃriŋk|",
         "transcription2": "|ʃræŋk|",
         "transcription3": "|ʃrʌŋk|",
@@ -1497,6 +1633,7 @@
     },
     {
         "id": "137",
+        "trained": "0",
         "transcription1": "|ʃʌt|",
         "transcription2": "|ʃʌt|",
         "transcription3": "|ʃʌt|",
@@ -1508,6 +1645,7 @@
     },
     {
         "id": "138",
+        "trained": "0",
         "transcription1": "|sɪŋ|",
         "transcription2": "|sæŋ|",
         "transcription3": "|sʌŋ|",
@@ -1519,6 +1657,7 @@
     },
     {
         "id": "139",
+        "trained": "0",
         "transcription1": "|sɪŋk|",
         "transcription2": "|sæŋk|",
         "transcription3": "|sʌŋk|",
@@ -1530,6 +1669,7 @@
     },
     {
         "id": "140",
+        "trained": "0",
         "transcription1": "|sɪt|",
         "transcription2": "|sæt|",
         "transcription3": "|sæt|",
@@ -1541,6 +1681,7 @@
     },
     {
         "id": "141",
+        "trained": "0",
         "transcription1": "|sleɪ|",
         "transcription2": "|slu:|",
         "transcription3": "|sleɪn|",
@@ -1552,6 +1693,7 @@
     },
     {
         "id": "142",
+        "trained": "0",
         "transcription1": "|sli:p|",
         "transcription2": "|slept|",
         "transcription3": "|slept|",
@@ -1563,6 +1705,7 @@
     },
     {
         "id": "143",
+        "trained": "0",
         "transcription1": "|slaid|",
         "transcription2": "|slid|",
         "transcription3": "|slid|",
@@ -1574,10 +1717,11 @@
     },
     {
         "id": "144",
+        "trained": "0",
         "transcription1": "|slɪŋ|",
         "transcription2": "|slʌŋ|",
         "transcription3": "|slʌŋ|",
-        "translationRus": "швырять / швырнуть / вешать через плечо / подвешивать",
+        "translationRus": "швырять / швырнуть / подвешивать",
         "translationUkr": "повісити",
         "word1": "sling",
         "word2": "slung",
@@ -1585,6 +1729,7 @@
     },
     {
         "id": "145",
+        "trained": "0",
         "transcription1": "|slɪŋk|",
         "transcription2": "|slɪŋkt| / |slʌŋk|",
         "transcription3": "|slɪŋkt| / |slʌŋk|",
@@ -1596,6 +1741,7 @@
     },
     {
         "id": "146",
+        "trained": "0",
         "transcription1": "|slɪt|",
         "transcription2": "|slɪt|",
         "transcription3": "|slɪt|",
@@ -1607,6 +1753,7 @@
     },
     {
         "id": "147",
+        "trained": "0",
         "transcription1": "|smel|",
         "transcription2": "|smelt|",
         "transcription3": "|smelt|",
@@ -1618,6 +1765,7 @@
     },
     {
         "id": "148",
+        "trained": "0",
         "transcription1": "|smʌɪt|",
         "transcription2": "|sməʊt|",
         "transcription3": "|ˈsmɪtn|",
@@ -1629,6 +1777,7 @@
     },
     {
         "id": "149",
+        "trained": "0",
         "transcription1": "|sou|",
         "transcription2": "|soud|",
         "transcription3": "|soun|",
@@ -1640,6 +1789,7 @@
     },
     {
         "id": "150",
+        "trained": "0",
         "transcription1": "|spi:k|",
         "transcription2": "|spouk|",
         "transcription3": "|‘spoukən|",
@@ -1651,6 +1801,7 @@
     },
     {
         "id": "151",
+        "trained": "0",
         "transcription1": "|spi:d|",
         "transcription2": "|spɛd|",
         "transcription3": "|spɛd|",
@@ -1662,6 +1813,7 @@
     },
     {
         "id": "152",
+        "trained": "0",
         "transcription1": "|spel|",
         "transcription2": "|spelt|",
         "transcription3": "|spelt|",
@@ -1673,6 +1825,7 @@
     },
     {
         "id": "153",
+        "trained": "0",
         "transcription1": "|spend|",
         "transcription2": "|spent|",
         "transcription3": "|spent|",
@@ -1684,6 +1837,7 @@
     },
     {
         "id": "154",
+        "trained": "0",
         "transcription1": "|spɪl|",
         "transcription2": "|spɪlt|",
         "transcription3": "|spɪlt|",
@@ -1695,6 +1849,7 @@
     },
     {
         "id": "155",
+        "trained": "0",
         "transcription1": "|spɪn|",
         "transcription2": "|spʌn|",
         "transcription3": "|spʌn|",
@@ -1706,6 +1861,7 @@
     },
     {
         "id": "156",
+        "trained": "0",
         "transcription1": "|spɪt|",
         "transcription2": "|spæt|",
         "transcription3": "|spæt|",
@@ -1717,6 +1873,7 @@
     },
     {
         "id": "157",
+        "trained": "0",
         "transcription1": "|splɪt|",
         "transcription2": "|splɪt|",
         "transcription3": "|splɪt|",
@@ -1728,6 +1885,7 @@
     },
     {
         "id": "158",
+        "trained": "0",
         "transcription1": "|spoɪl|",
         "transcription2": "|spoɪlt|",
         "transcription3": "|spoɪlt|",
@@ -1739,6 +1897,7 @@
     },
     {
         "id": "159",
+        "trained": "0",
         "transcription1": "|spred|",
         "transcription2": "|spred|",
         "transcription3": "|spred|",
@@ -1750,6 +1909,7 @@
     },
     {
         "id": "160",
+        "trained": "0",
         "transcription1": "|spriŋ|",
         "transcription2": "|spræŋ|",
         "transcription3": "|sprʌŋ|",
@@ -1761,6 +1921,7 @@
     },
     {
         "id": "161",
+        "trained": "0",
         "transcription1": "|stænd|",
         "transcription2": "|stʊd|",
         "transcription3": "|stʊd|",
@@ -1772,6 +1933,7 @@
     },
     {
         "id": "162",
+        "trained": "0",
         "transcription1": "|sti:l|",
         "transcription2": "|stoul|",
         "transcription3": "|‘stoulən|",
@@ -1783,10 +1945,11 @@
     },
     {
         "id": "163",
+        "trained": "0",
         "transcription1": "|stik|",
         "transcription2": "|stʌk|",
         "transcription3": "|stʌk|",
-        "translationRus": "приклеивать / застревать / упорствовать",
+        "translationRus": "приклеивать / застревать",
         "translationUkr": "колоти",
         "word1": "stick",
         "word2": "stuck",
@@ -1794,6 +1957,7 @@
     },
     {
         "id": "164",
+        "trained": "0",
         "transcription1": "|stiŋ|",
         "transcription2": "|stʌŋ|",
         "transcription3": "|stʌŋ|",
@@ -1805,6 +1969,7 @@
     },
     {
         "id": "165",
+        "trained": "0",
         "transcription1": "|stɪŋk|",
         "transcription2": "|stræŋk|",
         "transcription3": "|stʌŋk|",
@@ -1816,6 +1981,7 @@
     },
     {
         "id": "166",
+        "trained": "0",
         "transcription1": "|struː|",
         "transcription2": "|struːd|",
         "transcription3": "|struːn|",
@@ -1827,6 +1993,7 @@
     },
     {
         "id": "167",
+        "trained": "0",
         "transcription1": "|straɪd|",
         "transcription2": "|stroʊd|",
         "transcription3": "|strɪdn|",
@@ -1838,6 +2005,7 @@
     },
     {
         "id": "168",
+        "trained": "0",
         "transcription1": "|straɪk|",
         "transcription2": "|strʌk|",
         "transcription3": "|strʌk|",
@@ -1849,6 +2017,7 @@
     },
     {
         "id": "169",
+        "trained": "0",
         "transcription1": "|strɪŋ|",
         "transcription2": "|srtʌŋ|",
         "transcription3": "|srtʌŋ|",
@@ -1860,6 +2029,7 @@
     },
     {
         "id": "170",
+        "trained": "0",
         "transcription1": "|straɪv|",
         "transcription2": "|strəuv|",
         "transcription3": "|‘strɪvn|",
@@ -1871,6 +2041,7 @@
     },
     {
         "id": "171",
+        "trained": "0",
         "transcription1": "|sweə|",
         "transcription2": "|swɔ:|",
         "transcription3": "|swɔ:n|",
@@ -1882,6 +2053,7 @@
     },
     {
         "id": "172",
+        "trained": "0",
         "transcription1": "|swet|",
         "transcription2": "|swɛt| / |swɛtɪd|",
         "transcription3": "|swɛt| / |swɛtɪd|",
@@ -1893,6 +2065,7 @@
     },
     {
         "id": "173",
+        "trained": "0",
         "transcription1": "|swi:p|",
         "transcription2": "|swept|",
         "transcription3": "|swept|",
@@ -1904,6 +2077,7 @@
     },
     {
         "id": "174",
+        "trained": "0",
         "transcription1": "|swel|",
         "transcription2": "|sweld|",
         "transcription3": "|‘swoul(e)n|",
@@ -1915,6 +2089,7 @@
     },
     {
         "id": "175",
+        "trained": "0",
         "transcription1": "|swɪm|",
         "transcription2": "|swæm|",
         "transcription3": "|swʌm|",
@@ -1926,6 +2101,7 @@
     },
     {
         "id": "176",
+        "trained": "0",
         "transcription1": "|swiŋ|",
         "transcription2": "|swʌŋ|",
         "transcription3": "|swʌŋ|",
@@ -1937,6 +2113,7 @@
     },
     {
         "id": "177",
+        "trained": "0",
         "transcription1": "|teɪk|",
         "transcription2": "|tʊk|",
         "transcription3": "|‘teɪkən|",
@@ -1948,6 +2125,7 @@
     },
     {
         "id": "178",
+        "trained": "0",
         "transcription1": "|ti:tʃ|",
         "transcription2": "|tɔ:t|",
         "transcription3": "|tɔ:t|",
@@ -1959,6 +2137,7 @@
     },
     {
         "id": "179",
+        "trained": "0",
         "transcription1": "|teər|",
         "transcription2": "|tɔr|",
         "transcription3": "|tɔrn|",
@@ -1970,6 +2149,7 @@
     },
     {
         "id": "180",
+        "trained": "0",
         "transcription1": "|tel|",
         "transcription2": "|tould|",
         "transcription3": "|tould|",
@@ -1981,6 +2161,7 @@
     },
     {
         "id": "181",
+        "trained": "0",
         "transcription1": "|θɪŋk|",
         "transcription2": "|θɔ:t|",
         "transcription3": "|θɔ:t|",
@@ -1992,6 +2173,7 @@
     },
     {
         "id": "182",
+        "trained": "0",
         "transcription1": "|θrou|",
         "transcription2": "|θru:|",
         "transcription3": "|θroun|",
@@ -2003,10 +2185,11 @@
     },
     {
         "id": "183",
+        "trained": "0",
         "transcription1": "|θrʌst|",
         "transcription2": "|θrʌst|",
         "transcription3": "|θrʌst|",
-        "translationRus": "толкать / колоть / выгонять / сунуть",
+        "translationRus": "колоть / сунуть",
         "translationUkr": "засовувати / увіткнути",
         "word1": "thrust",
         "word2": "thrust",
@@ -2014,6 +2197,7 @@
     },
     {
         "id": "184",
+        "trained": "0",
         "transcription1": "|tred|",
         "transcription2": "|trɒd|",
         "transcription3": "|trɒdn|",
@@ -2025,6 +2209,7 @@
     },
     {
         "id": "185",
+        "trained": "0",
         "transcription1": "|ʌndəˈɡəʊ|",
         "transcription2": "|ʌndə’wɛnt|",
         "transcription3": "|ʌndə’ɡɒn|",
@@ -2036,6 +2221,7 @@
     },
     {
         "id": "186",
+        "trained": "0",
         "transcription1": "|ʌndər ‘stænd|",
         "transcription2": "|ʌndər ‘stʊd|",
         "transcription3": "|ʌndər ‘stʊd|",
@@ -2047,6 +2233,7 @@
     },
     {
         "id": "187",
+        "trained": "0",
         "transcription1": "|ʌndəˈteɪk|",
         "transcription2": "|ʌndəˈtʊk|",
         "transcription3": "|ʌndəˈteɪk(ə)n|",
@@ -2058,6 +2245,7 @@
     },
     {
         "id": "188",
+        "trained": "0",
         "transcription1": "|‘ʌn’du:|",
         "transcription2": "|‘ʌn’dɪd|",
         "transcription3": "|‘ʌn’dʌn|",
@@ -2069,10 +2257,11 @@
     },
     {
         "id": "189",
+        "trained": "0",
         "transcription1": "|ʌp’set|",
         "transcription2": "|ʌp’set|",
         "transcription3": "|ʌp’set|",
-        "translationRus": "опрокидывать / расстраивать / огорчать",
+        "translationRus": "расстраивать / огорчать",
         "translationUkr": "засмучувати / розстроювати",
         "word1": "upset",
         "word2": "upset",
@@ -2080,6 +2269,7 @@
     },
     {
         "id": "190",
+        "trained": "0",
         "transcription1": "|weɪk|",
         "transcription2": "|wouk|",
         "transcription3": "|‘woukən|",
@@ -2091,6 +2281,7 @@
     },
     {
         "id": "191",
+        "trained": "0",
         "transcription1": "|weər|",
         "transcription2": "|wɔr|",
         "transcription3": "|wɔrn|",
@@ -2102,6 +2293,7 @@
     },
     {
         "id": "192",
+        "trained": "0",
         "transcription1": "|wi:v|",
         "transcription2": "|woʊv| / |wi:vd|",
         "transcription3": "|woʊv| / |wi:vd|",
@@ -2113,6 +2305,7 @@
     },
     {
         "id": "193",
+        "trained": "0",
         "transcription1": "|wed|",
         "transcription2": "|wɛd| / |‘wɛdɪd|",
         "transcription3": "|wɛd| / |‘wɛdɪd|",
@@ -2124,6 +2317,7 @@
     },
     {
         "id": "194",
+        "trained": "0",
         "transcription1": "|wi:p|",
         "transcription2": "|wept|",
         "transcription3": "|wept|",
@@ -2135,6 +2329,7 @@
     },
     {
         "id": "195",
+        "trained": "0",
         "transcription1": "|wet|",
         "transcription2": "|wet|",
         "transcription3": "|wet|",
@@ -2146,6 +2341,7 @@
     },
     {
         "id": "196",
+        "trained": "0",
         "transcription1": "|wɪn|",
         "transcription2": "|wʌn|",
         "transcription3": "|wʌn|",
@@ -2157,6 +2353,7 @@
     },
     {
         "id": "197",
+        "trained": "0",
         "transcription1": "|waind|",
         "transcription2": "|waund|",
         "transcription3": "|waund|",
@@ -2168,6 +2365,7 @@
     },
     {
         "id": "198",
+        "trained": "0",
         "transcription1": "|wɪðˈdrɔː|",
         "transcription2": "|wɪð’druː|",
         "transcription3": "|wɪð’drɔːn|",
@@ -2179,6 +2377,7 @@
     },
     {
         "id": "199",
+        "trained": "0",
         "transcription1": "|wɪðˈhəʊld|",
         "transcription2": "|wɪðˈhɛld|",
         "transcription3": "|wɪðˈhɛld|",
@@ -2190,6 +2389,7 @@
     },
     {
         "id": "200",
+        "trained": "0",
         "transcription1": "|wɪðˈstand|",
         "transcription2": "|wɪðˈstʊd|",
         "transcription3": "|wɪðˈstʊd|",
@@ -2201,6 +2401,7 @@
     },
     {
         "id": "201",
+        "trained": "0",
         "transcription1": "|rɪŋ|",
         "transcription2": "|rʌŋ|",
         "transcription3": "|rʌŋ|",
@@ -2212,6 +2413,7 @@
     },
     {
         "id": "202",
+        "trained": "0",
         "transcription1": "|raɪt|",
         "transcription2": "|rout|",
         "transcription3": "|‘rɪtn|",
